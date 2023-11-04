@@ -174,13 +174,8 @@ function getCurrentDir() {
     echo "${current_dir}"
 }
 
-function includeDependencies() {
-    # shellcheck source=./setupLibrary.sh
-    source "${current_dir}/setupLibrary.sh"
-}
 
 current_dir=$(getCurrentDir)
-includeDependencies
 output_file="output.log"
 
 function main() {
